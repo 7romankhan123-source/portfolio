@@ -228,7 +228,7 @@ cfForm?.addEventListener('submit', async e => {
     const fd = new FormData();
     Object.entries(body).forEach(([k,v]) => fd.append(k,v));
     fd.append('_captcha', 'false');
-    const res = await fetch('https://formsubmit.co/ajax/muhammadullah6401@gmail.com', {
+    const res = await fetch('https://formsubmit.co/ajax/7roman.khan123@gmail.com', {
       method: 'POST',
       headers: { 'Accept': 'application/json' },
       body: fd
@@ -241,7 +241,7 @@ cfForm?.addEventListener('submit', async e => {
     } else throw new Error('Failed');
   } catch (err) {
     setBtnState('idle');
-    const fb = 'muhammadullah6401@gmail.com';
+    const fb = '7roman.khan123@gmail.com';
     const mb = encodeURIComponent(`Name: ${body.name}\nEmail: ${body.email}\n\n${body.message}`);
     showStatus('err', `❌ Could not send. <a href="mailto:${fb}?subject=${encodeURIComponent('Portfolio contact from '+body.name)}&body=${mb}" style="color:#f87171;text-decoration:underline">Send via email instead →</a>`);
   }
