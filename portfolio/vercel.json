@@ -1,1 +1,21 @@
-{\n  "version": 2,\n  "routes": [\n    { "src": "/api/contact", "dest": "/api/contact.js" },\n    { "src": "/static/(.*)", "dest": "/static/$1" },\n    { "src": "/public/(.*)", "dest": "/public/$1" },\n    { "src": "/(.*)", "dest": "/index.html" }\n  ]\n}
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/api/contact",
+      "dest": "/api/contact.js"
+    },
+    {
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
+      "src": "/public/(.*)",
+      "dest": "/public/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
